@@ -3,7 +3,7 @@ import { AlignBox } from '../../../components/AlignBox';
 import type { Scripts, SpriteState } from '../types';
 import styles from './Preview.module.css';
 import { Controls } from './components/Controls/Controls';
-import { Goal } from './components/Goal/Goal';
+// import { Goal } from './components/Goal/Goal';
 // import { Obstacle } from './components/Obstacle/Obstacle';
 import { Sprite } from './components/Sprite/Sprite';
 import { useCollisionDetection } from './hooks/useCollisionDetection';
@@ -44,7 +44,7 @@ export const Preview = (props: Props) => {
           collisions={collisions}
         />
         {/* <Obstacle /> */}
-        <Goal />
+        {/* <Goal /> */}
       </div>
     </div>
   );
