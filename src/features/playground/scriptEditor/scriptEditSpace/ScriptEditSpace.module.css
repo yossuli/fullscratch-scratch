@@ -1,0 +1,10 @@
+.scriptEditSpace {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fff;
+  border-left: 1px solid #ccc;
+}
+
+.blockGhost {
+  background-color: #ccc;
+}
