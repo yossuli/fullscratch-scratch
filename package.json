@@ -17,13 +17,16 @@
     "typecheck": "npm run hcm && tsc --noEmit"
   },
   "dependencies": {
+    "jotai": "^2.11.1",
     "next": "14.2.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
     "@types/react": "^18.2.67",
+    "@types/react-dom": "^18.3.5",
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.3",
