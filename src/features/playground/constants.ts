@@ -19,6 +19,8 @@ export const BLOCKS: READONLY_BLOCK[] = [
   { id: 7, contents: ['$10', '回繰り返す', []] },
   { id: 8, contents: ['$true', 'なら繰り返す', []] },
   { id: 9, contents: ['右へ向く'] },
+  { id: 10, contents: ['$10', '+', '$10'] },
+  { id: 11, contents: ['$10', '-', '$10'] },
 ];
 
 const emptyBlockDict: Record<number, BLOCK> = {};
@@ -130,5 +132,7 @@ export const moves = (
     9: () => {
       setState((prev) => ({ ...prev, direction: prev.direction + 90 }));
     },
+    10: () => Number(arg(0)) + Number(arg(1)),
+    11: () => Number(arg(0)) - Number(arg(1)),
   };
 };
